@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zderby.ZDerbyController">
+   <children>
+      <Button fx:id="btnSave" focusTraversable="false" layoutX="670.0" layoutY="50.0" mnemonicParsing="false" onAction="#onSave" prefWidth="100.0" text="SAVE" visible="false" />
+      <Button fx:id="btnAdd" focusTraversable="false" layoutX="670.0" layoutY="100.0" mnemonicParsing="false" onAction="#onAdd" prefWidth="100.0" text="ADD DATA" />
+      <Button fx:id="btnEdit" focusTraversable="false" layoutX="670.0" layoutY="150.0" mnemonicParsing="false" onAction="#onEdit" prefWidth="100.0" text="SAVE EDIT" visible="false" />
+      <Button fx:id="btnDelete" focusTraversable="false" layoutX="670.0" layoutY="200.0" mnemonicParsing="false" onAction="#onDelete" prefWidth="100.0" text="DELETE" visible="false" />
+      <Button fx:id="btnCancel" focusTraversable="false" layoutX="670.0" layoutY="100.0" mnemonicParsing="false" onAction="#onCancel" prefWidth="100.0" text="CANCEL" visible="false" />
+      <TableView fx:id="table" layoutX="120.0" layoutY="330.0" prefHeight="200.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="IDCol" editable="false" maxWidth="65.0" prefWidth="65.0" resizable="false" sortable="false" text="ID" />
+          <TableColumn fx:id="firstNameCol" editable="false" maxWidth="155.0" prefWidth="155.0" resizable="false" text="First Name" />
+            <TableColumn fx:id="lastNameCol" editable="false" maxWidth="155.0" prefWidth="155.0" resizable="false" sortable="false" text="Last Name" />
+            <TableColumn fx:id="phoneNumCol" editable="false" maxWidth="55.0" prefWidth="55.0" resizable="false" sortable="false" text="Phone" visible="false" />
+            <TableColumn fx:id="notesCol" editable="false" maxWidth="55.0" prefWidth="55.0" resizable="false" sortable="false" text="Notes" visible="false" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txfID" editable="false" focusTraversable="false" layoutX="120.0" layoutY="50.0" prefWidth="60.0" />
+      <Label layoutX="90.0" layoutY="55.0" text="ID" />
+      <TextField fx:id="txfFName" editable="false" layoutX="120.0" layoutY="100.0" prefWidth="150.0" />
+      <Label layoutX="35.0" layoutY="105.0" text="First Name" />
+      <TextField fx:id="txfLName" editable="false" layoutX="365.0" layoutY="100.0" prefWidth="150.0" />
+      <Label layoutX="280.0" layoutY="105.0" text="Last  Name" />
+      <TextField fx:id="txfAC" editable="false" layoutX="120.0" layoutY="150.0" prefHeight="28.0" prefWidth="50.0" />
+      <TextField fx:id="txfPF" editable="false" layoutX="185.0" layoutY="150.0" prefHeight="28.0" prefWidth="50.0" />
+      <TextField fx:id="txfSF" editable="false" layoutX="250.0" layoutY="150.0" prefWidth="60.0" />
+      <Label layoutX="10.0" layoutY="155.0" text="Phone Number" />
+      <TextField fx:id="txfNotes" editable="false" layoutX="120.0" layoutY="200.0" prefWidth="150.0" />
+      <Label layoutX="70.0" layoutY="205.0" text="Notes" />
+      <TextField fx:id="txfInfo" editable="false" focusTraversable="false" layoutX="120.0" layoutY="260.0" prefHeight="28.0" prefWidth="400.0" style="-fx-background-color: yellow;" />
+      <Label layoutX="80.0" layoutY="265.0" text="Info" />
+   </children>
+</Pane>
